@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("../img/hero-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1000;
+}
+
+.jurnal-box::-webkit-scrollbar {
+    @apply bg-gray-300 w-3
+}
+
+.jurnal-box::-webkit-scrollbar-thumb {
+    @apply bg-teal-700 rounded-lg
+}
+
+.input-title {
+    @apply text-2xl font-medium
+}
+
+.input-title::-webkit-input-placeholder {
+    @apply text-2xl
+}
+
+.noSk {
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="date"],
+textarea {
+    @apply mb-4
+}
+
+.noSk,
+textarea {
+    @apply text-base
+}
+
+input:focus {
+    outline: none;
+}
+
+textarea {
+    resize: none;
+    height: 150px;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+input[type="date"] {
+    @apply text-gray-400 w-[7.5rem]
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    background-image: url("../img/calendar-regular.svg");
+}
+
+
+
+input[type="date"]:focus {
+    outline: none;
+}

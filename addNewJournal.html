@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabah Jurnal</title>
+
+    <link rel="stylesheet" href="./assets/css/output.css">
+</head>
+
+<body>
+    <header class="absolute top-0 left-0">
+        <nav class="flex justify-between py-4 relative p-4 lg:w-[921px] md:w-[718px] sm:w-[590px] mx-auto">
+            <a href="jurnal.html"><img src="./assets/img/arrow-left-solid.svg" alt="arrow"></a>
+        </nav>
+    </header>
+    <section class="hero h-[200px] md:h-[250px] px-4 flex justify-center items-center">
+        <h1 class="w-[1028px] mx-auto text-3xl md:text-5xl font-semibold text-white text-center ">
+            ADD NEW JOURNAL
+        </h1>
+    </section>
+    <main class="p-4 bg-gray-200 ">
+        <form class="bg-white shadow-xl p-8 rounded-md lg:w-[921px] md:w-[718px] sm:w-[590px] mx-auto flex flex-col">
+            <input class="input-title" type="text" name="title" placeholder="Title">
+            <input class="noSk" type="text" name="number" placeholder="NO-SK">
+            <textarea placeholder="Write a description....." name="description"></textarea>
+            <input type="date" name="date">
+            <div class="flex justify-between border-t-2 border-solid pt-2 border-gray-400">
+                <input type="file" name="file">
+                <button class="bg-teal-700 text-white px-3 py-2 text-base rounded-md">Create</button>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
